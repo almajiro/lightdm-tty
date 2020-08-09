@@ -42,7 +42,7 @@ class tty {
 
         // Init command handler
         this.commands = new commandHandler(commands, this.utils);
-        
+
         if (this.commands.exists('motd')) {
             this.stdout(this.commands.get('motd').callback());
         }
